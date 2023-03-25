@@ -72,3 +72,5 @@ if __name__ == "__main__":
     while True:
         print("Gehaltsrechner!")
         gehaltsrechner()
+
+# todo: Steuernabzüge aufrunden und das Program nach den Abzügen beenden
