@@ -1,6 +1,3 @@
-# Dies ist ein Gehaltsrechner
-
-
 def gehaltsrechner():
 
     arbeits_zeit, frage, lohn_stunde = abfrage()
