@@ -56,15 +56,15 @@ def steuernabzuege(arbeits_zeit, frage, lohn_stunde, monate):
         elif steuern == "ja":
             if "monat" in frage:
                 nach_steuern = int(lohn_stunde) * int(arbeits_zeit) / 1.19
-                print(f"Ihr Gehalt im Monat nach Steuernabzügen beträgt: {nach_steuern}€")
+                print(f"Ihr Gehalt im Monat nach Steuernabzügen beträgt: {round(nach_steuern, 2)}€")
             if "jahr" in frage:
                 nach_steuern = int(lohn_stunde) * int(arbeits_zeit) / 1.19 * int(monate)
-                print(f"Ihr Gehalt im Jahr nach Steuernabzügen beträgt: {nach_steuern}€")
+                print(f"Ihr Gehalt im Jahr nach Steuernabzügen beträgt: {round(nach_steuern, 2)}€")
             if "beide" in frage:
                 nach_steuern = int(lohn_stunde) * int(arbeits_zeit) / 1.19
                 nach_steuern1 = int(lohn_stunde) * int(arbeits_zeit) / 1.19 * int(monate)
-                print(f"Ihr Gehalt im Monat nach Steuernabzügen beträgt: {nach_steuern}€")
-                print(f"Ihr Gehalt im Jahr nach Steuernabzügen beträgt: {nach_steuern1}€")
+                print(f"Ihr Gehalt im Monat nach Steuernabzügen beträgt: {round(nach_steuern, 2)}€")
+                print(f"Ihr Gehalt im Jahr nach Steuernabzügen beträgt: {round(nach_steuern, 2)}€")
         break
 
 
@@ -73,4 +73,4 @@ if __name__ == "__main__":
         print("Gehaltsrechner!")
         gehaltsrechner()
 
-# todo: Steuernabzüge aufrunden und das Program nach den Abzügen beenden
+# todo: Das Program nach den Abzügen beenden
